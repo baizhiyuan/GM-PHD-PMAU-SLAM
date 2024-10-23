@@ -45,7 +45,7 @@ The GM-PHD-PMAU-SLAM implementation was developed within the [PHD-SLAM-3.0](http
 
 5. The function perform_mcs() in MonteCarloSimulations.m utilizes Matlab's Parallel Computing Toolbox to run the simulations with multiple CPU cores in parallel. If you don't have Parallel Computing Toolbox installed, simply change the parfor-loop to a regular for-loop.
 
-6. Please note that as the paper is currently under review, the current version of the code is a preview version. It is capable of producing experimental results but does not yet include the internal implementation of the algorithm. All code will be fully released after the paper is published.
+6. Please note that, as the paper is currently under review, the present version of the code is a preview. It can produce experimental results using the mex-files but does not yet include the full internal implementation of the algorithm. The complete code will be released after the paper is published.
 
 
 References:
