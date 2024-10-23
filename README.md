@@ -7,7 +7,7 @@ The GM-PHD-PMAU-SLAM implementation was developed within the [PHD-SLAM-3.0](http
 2. GM-PHD-PMAU-SLAM with synthetic data.\
     a) Open file ".\GM-PHD-PMAU-SLAM\Synthetic Data\MonteCarloSimulations.m"\
     b) Set option = 1 and run the code to create the data.\
-    c) Set option = 2 and run the code to perform the Monte Carlo simulations (MCSs). This will take some time since it        will perform 100 MCS with 1, 10 and 100 particles. You should get the following results:
+    c) Set option = 2 and run the code to perform the Monte Carlo simulations (MCSs). This will take some time since it        will perform 100 MCS with three algorithms. You should get the following results:
     
        GM-PHD-PMAU-SLAM Performance:
        N:1,   POS.std.=5.34±3.39 [m], HEAD.std.=0.66±0.36 [deg], GOSPA std.=59.12±30.71 [m], 
