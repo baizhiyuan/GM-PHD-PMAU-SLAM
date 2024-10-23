@@ -26,7 +26,7 @@ The GM-PHD-PMAU-SLAM implementation was developed within the [PHD-SLAM-3.0](http
     d) The results are stored in the results-folder, and the performance metrics can be computed by setting option = 3         and running the code. 
     
 3. GM-PHD-PMAU-SLAM with Victoria Park data set.\
-    a) Download "victoria_park.zip" from [4] and unzip the folder in to "Victoria Park/measurements/VP data set"
+    a) Download "victoria_park.zip" from [4] and unzip the folder in to "Victoria Park/measurements/VP data set"\
     b) Open file ".\GM-PHD-PMAU-SLAM\Victoria Park\MonteCarloSimulations.m"\
     c) Set option = 1 and run the code to create the data.\
     d) Set option = 2 and run the code to perform MCSs. You should get the following result:
