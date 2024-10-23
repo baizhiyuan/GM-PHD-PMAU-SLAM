@@ -26,10 +26,9 @@ The GMPHD-PMAU-SLAM implementation developed within the PHD-SLAM 3.0 code framew
     d) The results are stored in the results-folder, and the performance metrics can be computed by setting option = 3         and running the code. 
     
 3. GMPHD-PMAU-SLAM with Victoria Park data set.\
-    a) Download "victoria_park.zip" from [4] and unzip the folder in to "Victoria Park/measurements/VP data set"\
-    b) Open file ".\GMPHD-PMAU-SLAM\Victoria Park\MonteCarloSimulations.m"\
-    c) Set option = 1 and run the code to create the data.\
-    d) Set option = 2 and run the code to perform MCSs. You should get the following result:
+    a) Open file ".\GMPHD-PMAU-SLAM\Victoria Park\MonteCarloSimulations.m"\
+    b) Set option = 1 and run the code to create the data.\
+    c) Set option = 2 and run the code to perform MCSs. You should get the following result:
     
        GM-PHD-PMAU-SLAM Performance:
        N:1,  POS.=2.55 [m], CPU=2.93 [ms], TIME=21.18 [s]
@@ -40,7 +39,7 @@ The GMPHD-PMAU-SLAM implementation developed within the PHD-SLAM 3.0 code framew
        N:5,  POS.=3.38 [m], CPU=2.38 [ms], TIME=17.17 [s]
        N:30, POS.=3.49 [m], CPU=13.76 [ms], TIME=99.50 [s]
     
-    e) The results are stored in the results-folder, and the performance metrics can be computed by setting option = 3         and running the code. 
+    d) The results are stored in the results-folder, and the performance metrics can be computed by setting option = 3         and running the code. 
     
 4. If Matlab throws an error from the mex-files, you need to compile the mex-files on your computer. The mex-files can be compiled using CompileCLibraries.m found in the folder ".\GMPHD-PMAU-SLAM\Shared Files\mex source". Please note that the mex-files have to be compiled seperately for both data sets. Further instructions can be found in CompileCLibraries.m.
 
