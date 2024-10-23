@@ -50,7 +50,7 @@ The GMPHD-PMAU-SLAM implementation developed within the PHD-SLAM 3.0 code framew
 
 References:
 
-[1] H. Shentu, Z. Bai et al., "A GMPHD-SLAM Algorithm Based on Pose and Map Alternating Update," under review.
+[1] H. Shentu, Z. Bai et al., "A GM-PHD-SLAM Algorithm Based on Pose and Map Alternating Update," under review.
 
 [2] L. Gao, G. Battistelli and L. Chisci, "PHD-SLAM 2.0: Efficient SLAM in the Presence of Missdetections and Clutter," in IEEE Transactions on Robotics, doi: 10.1109/TRO.2021.3052078.
 
