@@ -24,7 +24,7 @@ function MonteCarloSimulations
     % set option = 2 to run MCS
     % set option = 3 to compute performance metrics
     
-    option = 2;
+    option = 1;
     
     % number of simulations
     MCS = 100;
