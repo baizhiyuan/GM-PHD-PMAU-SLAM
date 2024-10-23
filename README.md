@@ -34,10 +34,6 @@ The GM-PHD-PMAU-SLAM implementation was developed within the [PHD-SLAM-3.0](http
        N:1,  POS.=2.55 [m], CPU=2.93 [ms], TIME=21.18 [s]
        LGM-PHD-PMAU-SLAM Performance:
        N:1,  POS.=2.46 [m], CPU=3.09 [ms], TIME=22.33 [s]
-       PHD-SLAM 3.0 Performance:
-       N:1,  POS.=3.57 [m], CPU=0.52 [ms], TIME=3.74 [s]
-       N:5,  POS.=3.38 [m], CPU=2.38 [ms], TIME=17.17 [s]
-       N:30, POS.=3.49 [m], CPU=13.76 [ms], TIME=99.50 [s]
     
     d) The results are stored in the results-folder, and the performance metrics can be computed by setting option = 3         and running the code. 
     

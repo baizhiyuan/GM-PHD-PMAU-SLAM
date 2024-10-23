@@ -37,8 +37,8 @@ function MonteCarloSimulations
             perform_mcs(MCS,1);
             fprintf('LGM-PHD-PMAU-SLAM Performance:\n');
             perform_mcs(MCS,2);
-            fprintf('PHD-SLAM 3.0 Performance:\n');
-            perform_mcs(MCS,3);
+            % fprintf('PHD-SLAM 3.0 Performance:\n');
+            % perform_mcs(MCS,3);
         case 3
             compute_performance_metrics
         otherwise
@@ -152,16 +152,16 @@ function compute_performance_metrics
     catch
         fprintf('Can''t load file, incorrect filename!\n')
     end
-    fprintf('PHD-SLAM 3.0 Performance:\n');
-    for j = 1:size(N,1)
-        try
-            % load data
-            load(sprintf(filename3,N(j)),'POS_E','CPU')
-            print_performance_metrics(N(j),POS_E,CPU);
-        catch
-            fprintf('Can''t load file, incorrect filename!\n')
-        end
-    end
+    % fprintf('PHD-SLAM 3.0 Performance:\n');
+    % for j = 1:size(N,1)
+    %     try
+    %         % load data
+    %         load(sprintf(filename3,N(j)),'POS_E','CPU')
+    %         print_performance_metrics(N(j),POS_E,CPU);
+    %     catch
+    %         fprintf('Can''t load file, incorrect filename!\n')
+    %     end
+    % end
 end
 
 

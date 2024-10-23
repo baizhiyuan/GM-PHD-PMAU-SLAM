@@ -11,13 +11,19 @@ function [params,sim,filename] = simulation_setup(file_idx,mode,MEX)
     %    sim        - struct containing the simulation data
     %    filename   - file identifier
     %
-    % Author   : Ossi Kaltiokallio
-    %            Tampere University, Department of Electronics and
-    %            Communications Engineering
-    %            Korkeakoulunkatu 1, 33720 Tampere
-    %            ossi.kaltiokallio@tuni.fi
-    % Last Rev : 3/10/2022
-    % Tested   : '9.8.0.1359463 (R2020a) Update 1'
+    % Original Author: Ossi Kaltiokallio
+    %                  Tampere University, Department of Electronics and
+    %                  Communications Engineering
+    %                  Korkeakoulunkatu 1, 33720 Tampere
+    %                  ossi.kaltiokallio@tuni.fi
+    % Last Rev (Original): 29/9/2022
+    %
+    % Modified by : Zhiyuan Bai
+    %               Hangzhou Dianzi University, Artificial Intelligence
+    %               Xiasha Higher Education Zone, Hangzhou, 310018
+    %               bai846@hdu.edu.cn
+    % Last Rev     : 22/10/2024
+    % Tested       : Matlab version 23.2.0.2365128 (R2023b)
     %
     % Copyright notice: You are free to modify, extend and distribute 
     %    this code granted that the author of the original code is 
@@ -179,7 +185,8 @@ function params = initialize_parameters
     params.angle_buffer = 5*pi/180;                                % parameter used to determine if a landmark near the FOV 
 
     % PHD parameters
-    params.lambda = 10;                                             % expectation of the Poisson distribution
+    origin_lambda = 5;                                             % empirical value of the original clutter count in the dataset 
+    params.lambda = 10 - origin_lambda;                            % expectation of the Poisson distribution
     params.lambda_c = params.lambda/ ...
         ((2*params.fov_angle/(2*pi))*pi*params.fov_range^2);       % clutter intensity
     params.P_D  = 0.7;                                             % probability of detection
